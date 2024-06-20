@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1 Sinau Coding</title>
+</head>
+
+<body>
+    <table border="1" cellspacing="1" cellpadding="5" align="center">
+        <thead>
+            <tr>
+                <th>Jenis</th>
+                <th width="400">Hasil</th>
+                <th>Keterangan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Text</th>
+                <td align="center">
+                    <label for="input-text">
+                        Input Text :
+                        <input type="text" id="input-text" placeholder="input text" />
+                    </label>
+                </td>
+                <td>tipe inputan yang diterima adalah text</td>
+            </tr>
+            <tr>
+                <th>Number</th>
+                <td align="center">
+                    <label for="input-number">
+                        Input Number :
+                        <input type="number" id="input-number" placeholder="input number" />
+                    </label>
+                </td>
+                <td>
+                    tipe inputan yang diterima adalah number atau angka dan symbol "." , "-"
+                </td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td align="center">
+                    <label for="input-email">
+                        Input Email :
+                        <input type="email" id="input-email" placeholder="input email" />
+                    </label>
+                </td>
+                <td>tipe inputan yang diterima adalah email dan mengandung validasi</td>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <td align="center">
+                    <label for="input-password">
+                        Input Password :
+                        <input type="password" id="input-password" placeholder="input password" />
+                    </label>
+                </td>
+                <td>
+                    tipe inputan yang diterima adalah text tetapi akan disembunyikan dalam bentuk bintang
+                </td>
+            </tr>
+            <tr>
+                <th>Radio</th>
+                <td align="center">
+                    Input Radio :
+                    <label for="radio1">
+                        <input name="radio" type="radio" id="radio1" /> Radio 1
+                    </label>
+                    <label for="radio2">
+                        <input name="radio" type="radio" id="radio2" /> Radio 2
+                    </label>
+                </td>
+                <td>
+                    tipe inputan yang diterima adalah berupa pilihan dan hanya bisa dipilih salah satu
+                </td>
+            </tr>
+            <tr>
+                <th>Checkbox</th>
+                <td align="center">
+                    Input Checkbox :
+                    <label for="check1">
+                        <input name="checkbox" type="checkbox" id="check1" /> Checkbox 1
+                    </label>
+                    <label for="check2">
+                        <input name="checkbox" type="checkbox" id="check2" /> Checkbox 2
+                    </label>
+                </td>
+                <td>tipe inputan yang diterima adalah checklist dan bisa dipilih beberapa</td>
+            </tr>
+            <tr>
+                <th>Range</th>
+                <td align="center">
+                    <label for="range">
+                        Input Range :
+                        <input type="range" name="range" id="range">
+                    </label>
+                </td>
+                <td>tipe inputan yang diterima adalah bar yang bisa digeser</td>
+            </tr>
+            <tr>
+                <th>Time</th>
+                <td align="center">
+                    <label for="time">
+                        Input Time :
+                        <input type="time" name="time" id="time">
+                    </label>
+                </td>
+                <td>tipe inputan yang diterima adalah format waktu</td>
+            </tr>
+            <tr>
+                <th>Date</th>
+                <td align="center">
+                    <label for="Date">
+                        Input Date :
+                        <input type="date" name="date" id="date">
+                    </label>
+                </td>
+                <td>
+                    tipe inputan yang diterima adalah format waktu dalam satuan hari (hh), bulan (bb) dan tahun (tttt)
+                </td>
+            </tr>
+            <tr>
+                <th>Week</th>
+                <td align="center">
+                    <label for="week">
+                        Input Week :
+                        <input type="week" name="week" id="week">
+                    </label>
+                </td>
+                <td>tipe inputan yang diterima adalah format waktu dalam kurun satu minggu</td>
+            </tr>
+            <tr>
+                <th>Month</th>
+                <td align="center">
+                    <label for="month">
+                        Input Month :
+                        <input type="month" name="month" id="month">
+                    </label>    
+                </td>
+                <td>
+                    tipe inputan yang diterima adalah format waktu dalam satuan bulan (nama bulan) dan tahun (tttt)
+                </td>
+            </tr>
+            <tr>
+                <th>Color</th>
+                <td align="center">
+                    <label for="color">
+                        Input Color :
+                        <input type="color" name="color" id="color">
+                    </label>
+                </td>
+                <td>
+                    tipe inputan yang diterima adalah warna yang dipilih dari palet warna
+                </td>
+            </tr>
+            <tr>
+                <th>File</th>
+                <td align="center">
+                    <label for="file">
+                        Input File :
+                        <input type="file" name="file" id="file">
+                    </label>
+                </td>
+                <td>
+                    tipe inputan yang diterima adalah dalam bentuk file
+                </td>
+            </tr>
+            <tr>
+                <th>Combo box</th>
+                <td align="center">
+                    <label for="combobox">Input Select :</label>
+                    <select name="combobox" id="combobox">
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                    </select>
+                </td>
+                <td>
+                    tipe inputan yang diterima adalah option yang bisa dipilih
+                </td>
+            </tr>
+            <tr>
+                <th>Textarea</th>
+                <td align="center">
+                    <label for="textarea">
+                        Input Textarea : <br>
+                        <textarea name="textarea" id="textarea" placeholder="Input Textarea" cols="20" rows="5"></textarea>
+                    </label>
+                </td>
+                <td>
+                    tipe inputan yang diterima adalah format text panjang / paragraf
+                </td>
+            </tr>
+            <tr>
+                <th>Button</th>
+                <td align="center">
+                    <button type="button">Button</button>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                </td>
+                <td>
+                    suatu tombol yang bisa melakukan action tertentu ketika diber perintah
+                </td>
+            </tr>
+            <tr>
+                <th>Image</th>
+                <td align="center">
+                    <input type="image" src="./search.png" alt="search icon">
+                </td>
+                <td>
+                    memiliki fungsi yang sama seperti submit button namun memiliki atribut src untuk menambahkan gambar
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
