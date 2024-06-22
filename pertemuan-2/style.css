@@ -20,6 +20,7 @@ body {
   color: #3b84fa;
   background-color: #add8e6;
   background-image: url(./asset/icons8-css-logo-240.png);
+  background-position: right;
 }
 
 .javascript-wrap {
