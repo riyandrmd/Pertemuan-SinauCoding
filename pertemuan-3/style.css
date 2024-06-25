@@ -59,6 +59,10 @@
   font-weight: 700;
 }
 
+.twitter-logo p a:hover{
+  color: #3f3f3f;
+}
+
 .right-content h1 {
   font-size: 36px;
   margin-top: 70px;
@@ -99,6 +103,11 @@ input {
   background-color: #eeeeee;
   margin-top: 18px;
   border-radius: 5px;
+}
+
+input:focus{
+  outline: none;
+  background-color:#e0e0e0 ;
 }
 
 .forgot-password {
