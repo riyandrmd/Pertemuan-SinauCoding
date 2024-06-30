@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>my website</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header d-flex align-items-center justify-content-center">
+                <img src="../asset/profil.png" class="img-fluid rounded-circle" alt="profil.jpg">
+            </div>
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#pendidikan">Pendidikan</a>
+                </li>
+                <li>
+                    <a href="#skill">Skill</a>
+                </li>
+                <li>
+                    <a href="#portofolio">Portfolio</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container-fluid" id="content">
+            <nav class="navbar navbar-expand-md bg-light">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="bi bi-three-dots-vertical"></i>
+                    </button>
+                </div>
+            </nav>
+            <div id="about">
+                <h1 class="mb-2">
+                    Riyanda
+                    <span class="text-primary">Ramadhan</span>
+                </h1>
+                <div class="mb-3">
+                    <span>Banyumas |</span>
+                    <a href="mailto:ryanda.rama10@gmail.com">ryanda.rama10@gmail.com |</a>
+                    <a href=""><i class="bi bi-linkedin fs-5"></i> | </a>
+                    <a href=""><i class="bi bi-github fs-5"></i></a>
+                </div>
+                <p class="mb-5">Saya Riyanda Ramadhan (21 tahun) mahasiswa semester akhir jurusan D3 Manajemen
+                    Informatika di Universitas Nasional PASIM. Saya memiliki kemampuan public speaking
+                    yang baik serta keahlian dalam memecahkan masalah. Selain itu, saya memiliki
+                    ketertarikan yang besar pada dunia pemrograman dan teknologi informasi, dan telah
+                    menguasai beberapa bahasa pemrograman baik di bidang Back-End maupun FrontEnd.</p>
+            </div>
+            <div class="line"></div>
+            <div id="pendidikan">
+                <div class="resume-section-content">
+                    <h2 class="mb-3 fw-medium">Pendidikan</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-2">
+                        <div class="flex-grow-1">
+                            <h4 class="mb-0">Universitas Nasional Pasim</h4>
+                            <p class="mb-2">D3 Manajemen Informatika</p>
+                            <p>IPK: 3.75</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2021 - Sekarang</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h4 class="mb-0">SMK Negeri 1 Banyumas</h4>
+                            <div class="mb-2">Multimedia</div>
+                            <p>Nilai rata-rata akhir : 85.71</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2018 - 2021</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="mt-4" id="skill">
+                <h2 class="mb-2">Skills</h2>
+                <div class="subheading mb-3">Programming Languages & Tools</div>
+                <ul class="list-inline">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>React JS</li>
+                    <li>Golang</li>
+                    <li>MySQL</li>
+                    <li>PostgreSQL</li>
+                    <li>Photoshop</li>
+                </ul>
+            </div>
+            <div class="line"></div>
+            <div class="container-fluid mt-4" id="portfolio">
+                <h2 class="mb-2">Portfolio</h2>
+                <div class="container">
+                    <p class="m-0 fs-5 text-center">Bookshelf Website</p>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner p-4">
+                            <div class="carousel-item active">
+                                <img src="../asset/Bookshelf 1.png" class="d-block w-75 mx-auto" alt="projek.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../asset/Bookshelf 2.png" class="d-block w-75 mx-auto" alt="projek.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../asset/Bookshelf 3.png" class="d-block w-75 mx-auto" alt="projek.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../asset/Bookshelf 4.png" class="d-block w-75 mx-auto" alt="projek.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <p> Boku Bookshelf sebuah website yang digunakan untuk menyimpan data-data buku, dengan fitur-fitur
+                        untuk menambahkan buku, mengedit, dan menghapus buku, selain itu web ini juga memiliki fitur
+                        login & register dengan autentikasi menggunakan JWT. Proyek ini dikembangkan dengan menggunakan
+                        React untuk front-end, Node.js untuk back-end, dan database MariaDB.
+                    </p>
+                    <p>Tech Stack : </p>
+                    <ul class="list-group-flush">
+                        <li>Front-end : React JS</li>
+                        <li>Back-end : Node.js dengan framework Hapi</li>
+                        <li>Database : MariaDB</li>
+                        <li>Lainnya : Tailwind CSS, Chakra UI, jsonwebtoken, bcrypt</li>
+                    </ul>
+                    <p>Repository :
+                        <a class="text-primary" href="https://github.com/riyandrmd/boku-bookshelf-apps.git">https://github.com/riyandrmd/boku-bookshelf-apps.git</a>
+                    </p>
+                </div>
+                <div class="container">
+                    <p class="m-0 fs-5 text-center">Bookshelf Website</p>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner p-4">
+                            <div class="carousel-item active">
+                                <img src="../asset/Bookshelf 1.png" class="d-block w-75 mx-auto" alt="projek.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../asset/Bookshelf 2.png" class="d-block w-75 mx-auto" alt="projek.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../asset/Bookshelf 3.png" class="d-block w-75 mx-auto" alt="projek.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <p> Boku Bookshelf sebuah website yang digunakan untuk menyimpan data-data buku, dengan fitur-fitur
+                        untuk menambahkan buku, mengedit, dan menghapus buku, selain itu web ini juga memiliki fitur
+                        login & register dengan autentikasi menggunakan JWT. Proyek ini dikembangkan dengan menggunakan
+                        React untuk front-end, Node.js untuk back-end, dan database MariaDB.
+                    </p>
+                    <p>Tech Stack : </p>
+                    <ul class="list-group-flush">
+                        <li>Front-end : React JS</li>
+                        <li>Back-end : Node.js dengan framework Hapi</li>
+                        <li>Database : MariaDB</li>
+                        <li>Lainnya : Tailwind CSS, Chakra UI, jsonwebtoken, bcrypt</li>
+                    </ul>
+                    <p>Repository :
+                        <a class="text-primary" href="https://github.com/riyandrmd/boku-bookshelf-apps.git">https://github.com/riyandrmd/boku-bookshelf-apps.git</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
