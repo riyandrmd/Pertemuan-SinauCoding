@@ -1,0 +1,45 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.mask {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.bg-green {
+  background: #7fffbf;
+}
+
+.bg-image {
+  background-image: url("../asset/G.Slamet.webp");
+  height: 600px;
+  margin-top: 58px;
+  background-size: cover;
+}
+.card {
+  max-width: 25%;
+  height: auto;
+}
+
+.nav-item:hover {
+  font-weight: 700;
+}
+
+.card,
+.box-shadow {
+  box-shadow: 2px 10px 22px 1px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 2px 10px 22px 1px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 2px 10px 22px 1px rgba(0, 0, 0, 0.22);
+}
+
+.card:hover {
+  background-color: #8fdfb7;
+}
+
+.line {
+  width: 95%;
+  height: 1px;
+  border-bottom: 1px dashed #d6d6d6;
+  margin: 40px 0;
+}

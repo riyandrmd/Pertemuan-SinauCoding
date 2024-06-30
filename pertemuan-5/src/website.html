@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style2.css">
+    <title>Slamet Mountain</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-green fixed-top px-4 justify-content-between align-content-center">
+            <div class="d-flex align-items-center">
+                <img src="../asset/mountain.png" alt="logo.png" id="logo">
+                <span class="fw-semibold fs-4 m-2">Slamet Mountain</span>
+            </div>
+            <div>
+                <button data-mdb-button-init class="navbar-toggler" type="button" data-mdb-collapse-init
+                    data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="bi bi-list fs-4"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarExample01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#beranda">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#jalur">Jalur Pendakian</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#booking">Booking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tentang">Tentang</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="text-center bg-image" id="beranda">
+            <div class="mask w-100 h-100">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-white">
+                        <h1 class="mb-3">Informasi Pendakian Gunung Slamet</h1>
+                        <h4 class="mb-3">Status Pendakian : <span class="fw-bold bg-danger px-2">DIBUKA</span></h4>
+                        <a href="#booking"> <button type="button" class="btn btn-outline-light mt-5"
+                                data-mdb-ripple-init data-mdb-ripple-color="dark">Booking Pendakian</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container my-5" id="jalur">
+        <h3 class="text-center fw-semibold mb-4">Jalur Pendakian</h3>
+        <div class="d-flex justify-content-evenly">
+            <div class="card">
+                <img src="../asset/G.Slamet2.jpeg" class="card-img-top" alt="...">
+                <div class="card-body ">
+                    <h4 class="card-text fw-semibold fs-6">Jalur Bambangan</h4>
+                    <p class="m-0">Kabupaten Purbalingga</p>
+                    <p class="m-0">Lorem ipsum dolor sit.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../asset/G.Slamet2.jpeg" class="card-img-top" alt="...">
+                <div class="card-body ">
+                    <h4 class="card-text fw-semibold fs-6">Jalur Baturaden</h4>
+                    <p class="m-0">Kabupaten Banyunas</p>
+                    <p class="m-0">Lorem ipsum dolor sit.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../asset/G.Slamet2.jpeg" class="card-img-top" alt="...">
+                <div class="card-body ">
+                    <h4 class="card-text fw-semibold fs-6">Jalur Guci</h4>
+                    <p class="m-0">Kabupaten Tegal</p>
+                    <p class="m-0">Lorem ipsum dolor sit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="container my-4" id="booking">
+        <h3 class="text-center fw-semibold mb-4">Booking Pendakian</h3>
+        <div class="d-flex justify-content-between">
+            <div class="border border-2 rounded-2 p-4 mx-2 w-50 box-shadow">
+                <h4 class="fw-semibold mb-4">Isi Data</h4>
+                <form>
+                    <input type="text" class="form-control mb-4" placeholder="Nama Lengkap">
+                    <input type="text" class="form-control mb-4" placeholder="Alamat">
+                    <input type="number" class="form-control mb-4" placeholder="Jumlah Anggota">
+                    <input type="date" class="form-control mb-4" placeholder="Tanggal Pendakian">
+                    <select class="form-select mb-4" placeholder="Pilih Jalur">
+                        <option selected>Jalur Bambangan</option>
+                        <option value="1">Jalur Guci</option>
+                        <option value="2">Jalur Baturaden</option>
+                    </select>
+                    <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4">Booking</button>
+                </form>
+            </div>
+            <div class="border border-2 rounded-2 p-4 box-shadow">
+                <h4 class="fw-semibold">Aturan Pendakian</h4>
+                <ol class="list-group list-group-numbered ">
+                    <li class="list-group-item px-1 border-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Numquam, expedita!</li>
+                    <li class="list-group-item px-1 border-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Numquam, expedita!</li>
+                    <li class="list-group-item px-1 border-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Numquam, expedita!</li>
+                    <li class="list-group-item px-1 border-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Numquam, expedita!</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-green text-center text-md-start" id="tentang">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Tentang</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                        molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+                        aliquam voluptatem veniam, est atque cumque eum delectus sint!
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Sosial Media</h5>
+                    <ul class="list-unstyled mb-0 d-flex gap-3">
+                        <li>
+                            <a href="#!" class="text-body"><i class="bi bi-instagram fs-3"></i></a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-body"><i class="bi bi-whatsapp fs-2"></i></a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-body"><i class="bi bi-envelope-at fs-2"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            &copy; 2024 Copyright Slamet Mountain
+        </div>
+    </footer>
+
+</body>
+
+</html>
