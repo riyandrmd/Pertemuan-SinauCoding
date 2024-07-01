@@ -40,7 +40,7 @@ a:focus {
 
 .wrapper {
   display: flex;
-  width: 100%;
+  width: 100vh;
 }
 
 #sidebar {
@@ -93,6 +93,12 @@ a:focus {
   width: 100%;
 }
 
+.carousel-item img{
+  width: 80%;
+  height: fit-content;
+  margin-bottom: 10px;
+}
+
 footer p{
   color: #668ab9;
 }
@@ -112,5 +118,8 @@ footer p{
   }
   p{
     font-size: 14px;
+  }
+  .carousel-item img{
+    width: 100%;
   }
 }
