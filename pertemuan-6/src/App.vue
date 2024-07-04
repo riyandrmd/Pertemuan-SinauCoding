@@ -1,30 +1,36 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+      <div class="container">
+        <div class="left-content">
+            <h1>Welcome to Twitter</h1>
+            <h2>Happening now, join twitter today</h2>
+            <img src="./assets/Ilustrator.svg" alt="ilustrator.svg">
+            <p>&copy; 2022 Twitter, Inc</p>
+        </div>
+        <div class="right-content">
+            <div class="form-login">
+                <div class="twitter-logo">
+                    <img src="./assets/Logo Twitter.svg" alt="logo Twitter.svg">
+                    <p>Don't have an account ? <a href="#" target="_blank">Sign Up</a></p>
+                </div>
+                <h1>Login to Twitter</h1>
+                <p class="subtitle">Enter Twitter Account</p>
+                <input type="text" name="username" id="username" placeholder="Phone, email or username"
+                    autocomplete="on">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <a href="#" target="_blank" class="forgot-password">Forgot password ?</a>
+                <button type="submit">Sign In</button>
+                <p class="or">or</p>
+                <div class="button-container">
+                    <a href="#" target="_blank" class="google">
+                        <img src="./assets/Logo Google.svg" alt="google.svg">
+                        Sign in with Google
+                    </a>
+                    <a href="#" target="_blank" class="apple">
+                        <img src="./assets/Logo Apple.svg" alt="apple.svg">
+                        Sign in with Apple
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
-
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
