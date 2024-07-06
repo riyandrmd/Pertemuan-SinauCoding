@@ -18,7 +18,7 @@ const addIngredient = () => {
   temp.amount = 0;
   temp.price = 0;
 
-  console.log(ingredient.value);
+  //console.log(ingredient.value);
 };
 
 const deleteIngredient = (index) => {
@@ -40,18 +40,21 @@ const totalAmount = computed(() => {
 const router = useRouter();
 
 const goToPayment = () => {
-  if (customer.value === "") {
-    alert("Nama customer tidak boleh kosong");
+  if (totalAmount.value === 0 ) {
+    alert("Tidak ada pesanan yang bisa dicetak");
+  } else if (customer.value === "") {
+    alert("Mohon isikan nama Customer");
   } else {
     router.push({
       path: "/payment",
       query: {
-        totalAmount : totalAmount,
-        totalPrice : totalPrice,
-        customer : customer.value,
+        totalAmount: totalAmount.value,
+        totalPrice: totalPrice.value,
+        customer: customer.value,
       },
     });
   }
+  // console.log(totalAmount.value, " ", totalPrice.value, " ", customer.value);
 };
 </script>
 
@@ -91,17 +94,17 @@ const goToPayment = () => {
       <tr v-for="(data, index) in ingredient" :key="index">
         <td>{{ index + 1 }}</td>
         <td>{{ data.ingredient }}</td>
-        <td>Rp. {{ data.price }}</td>
+        <td>Rp. {{ data.price }} </td>
         <td>{{ data.amount }}</td>
-        <td>Rp. {{ data.amount * data.price }}</td>
+        <td>Rp. {{ data.amount * data.price }} </td>
         <td>
           <button type="button" @click="deleteIngredient(index)">Delete</button>
         </td>
       </tr>
       <tr>
         <td colspan="3">Total</td>
-        <td>{{ totalAmount }}</td>
-        <td>{{ totalPrice }}</td>
+        <td>{{ totalAmount }} </td>
+        <td>Rp. {{ totalPrice }} </td>
         <td></td>
       </tr>
     </tbody>
