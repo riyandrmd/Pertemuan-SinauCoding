@@ -12,6 +12,7 @@ const temp = reactive({
 const customer = ref("");
 
 const addIngredient = () => {
+  temp.price = parseFloat(temp.price).toFixed(2);
   ingredient.value.push({ ...temp });
   temp.customer = "";
   temp.ingredient = "";
@@ -27,7 +28,8 @@ const deleteIngredient = (index) => {
 
 const totalPrice = computed(() => {
   return ingredient.value.reduce((sum, item) => {
-    return sum + item.amount * item.price;
+    return parseFloat(sum + item.amount * item.price).toFixed(2)
+    //return sum + item.amount * item.price;
   }, 0);
 });
 
@@ -40,7 +42,7 @@ const totalAmount = computed(() => {
 const router = useRouter();
 
 const goToPayment = () => {
-  if (totalAmount.value === 0 ) {
+  if (totalAmount.value === 0) {
     alert("Tidak ada pesanan yang bisa dicetak");
   } else if (customer.value === "") {
     alert("Mohon isikan nama Customer");
@@ -94,17 +96,17 @@ const goToPayment = () => {
       <tr v-for="(data, index) in ingredient" :key="index">
         <td>{{ index + 1 }}</td>
         <td>{{ data.ingredient }}</td>
-        <td>Rp. {{ data.price }} </td>
+        <td>Rp. {{ data.price }}</td>
         <td>{{ data.amount }}</td>
-        <td>Rp. {{ data.amount * data.price }} </td>
+        <td>Rp. {{ parseFloat(data.amount * data.price).toFixed(2) }}</td>
         <td>
           <button type="button" @click="deleteIngredient(index)">Delete</button>
         </td>
       </tr>
       <tr>
         <td colspan="3">Total</td>
-        <td>{{ totalAmount }} </td>
-        <td>Rp. {{ totalPrice }} </td>
+        <td>{{ totalAmount }}</td>
+        <td>Rp. {{ totalPrice }}</td>
         <td></td>
       </tr>
     </tbody>
