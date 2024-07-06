@@ -1,14 +1,15 @@
 <script setup>
-import { reactive, ref } from "vue";
+import { reactive, ref, computed } from "vue";
+import { useRouter } from "vue-router";
 
 const ingredient = ref([]);
-
 const temp = reactive({
-  customer: "",
   ingredient: "",
   amount: 0,
   price: 0,
 });
+
+const customer = ref("");
 
 const addIngredient = () => {
   ingredient.value.push({ ...temp });
@@ -23,13 +24,42 @@ const addIngredient = () => {
 const deleteIngredient = (index) => {
   ingredient.value.splice(index, 1);
 };
+
+const totalPrice = computed(() => {
+  return ingredient.value.reduce((sum, item) => {
+    return sum + item.amount * item.price;
+  }, 0);
+});
+
+const totalAmount = computed(() => {
+  return ingredient.value.reduce((sum, data) => {
+    return sum + data.amount;
+  }, 0);
+});
+
+const router = useRouter();
+
+const goToPayment = () => {
+  if (customer.value === "") {
+    alert("Nama customer tidak boleh kosong");
+  } else {
+    router.push({
+      path: "/payment",
+      query: {
+        totalAmount : totalAmount,
+        totalPrice : totalPrice,
+        customer : customer.value,
+      },
+    });
+  }
+};
 </script>
 
 <template>
   <h1>List Ingredient</h1>
   <label for="customer">
     Customer
-    <input type="text" id="customer" v-model="temp.customer" /> <br />
+    <input type="text" id="customer" v-model="customer" /> <br />
   </label>
   <span>
     <label for="ingredient">
@@ -61,15 +91,23 @@ const deleteIngredient = (index) => {
       <tr v-for="(data, index) in ingredient" :key="index">
         <td>{{ index + 1 }}</td>
         <td>{{ data.ingredient }}</td>
-        <td>{{ data.price }}</td>
+        <td>Rp. {{ data.price }}</td>
         <td>{{ data.amount }}</td>
-        <td>{{ data.amount * data.price }}</td>
+        <td>Rp. {{ data.amount * data.price }}</td>
         <td>
           <button type="button" @click="deleteIngredient(index)">Delete</button>
         </td>
       </tr>
+      <tr>
+        <td colspan="3">Total</td>
+        <td>{{ totalAmount }}</td>
+        <td>{{ totalPrice }}</td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
+  <p>Total Data : {{ ingredient.length }}</p>
+  <button type="button" @click="goToPayment()">Cetak Tagihan</button>
 </template>
 
 <style scoped>
