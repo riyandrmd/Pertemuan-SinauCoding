@@ -11,8 +11,8 @@ const router = createRouter({
             component :InputIngredient
         },
         {
-            path: '/cetak',
-            name : 'cetakTagihan',
+            path: '/payment',
+            name : 'payment',
             component :CetakTagihan
         }
     ]
