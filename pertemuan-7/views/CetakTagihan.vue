@@ -17,7 +17,7 @@ console.log(route.query.totalPrice);
     <p>
       Total pembayaran yang harus dibayarkan {{ namaCustomer }} dari
       {{ totalAmount }} items sebesar <br />
-      Rp. {{ totalPrice }}
+      Rp. {{ totalPrice }},00
     </p>
     <button type="button" @click="router.back()">Back</button>
   </div>

@@ -94,9 +94,9 @@ const goToPayment = () => {
       <tr v-for="(data, index) in ingredient" :key="index">
         <td>{{ index + 1 }}</td>
         <td>{{ data.ingredient }}</td>
-        <td>Rp. {{ data.price }} </td>
+        <td>Rp. {{ data.price }},00 </td>
         <td>{{ data.amount }}</td>
-        <td>Rp. {{ data.amount * data.price }} </td>
+        <td>Rp. {{ data.amount * data.price }},00 </td>
         <td>
           <button type="button" @click="deleteIngredient(index)">Delete</button>
         </td>
@@ -104,7 +104,7 @@ const goToPayment = () => {
       <tr>
         <td colspan="3">Total</td>
         <td>{{ totalAmount }} </td>
-        <td>Rp. {{ totalPrice }} </td>
+        <td>Rp. {{ totalPrice }},00 </td>
         <td></td>
       </tr>
     </tbody>
