@@ -9,11 +9,17 @@ const tableData = reactive({
   data: User,
 });
 
+const hanldeShowData = (data) => {
+  alert(
+    `Nama ${data.nama}, Posisi ${data.position}, No Telp. ${data.no_telp} , Email ${data.email} `
+  );
+  console.log(data);
+};
 </script>
 
 <template>
   <div>
     <h3>Table View</h3>
-    <TableComponent :dataTable="tableData" />
+    <TableComponent :dataTable="tableData" @showData="hanldeShowData" />
   </div>
 </template>

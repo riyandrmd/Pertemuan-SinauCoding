@@ -5,6 +5,9 @@ defineProps({
     default: {},
   },
 });
+
+const emit = defineEmits(['showData'])
+
 </script>
 
 <template>
@@ -23,7 +26,7 @@ defineProps({
         <td>{{ data.position }}</td>
         <td>{{ data.no_telp }}</td>
         <td>{{ data.email }}</td>
-        <td><Button type="Submit">Submit</Button></td>
+        <td><button type="Submit" @click="emit('showData', data)">Show Data</button></td>
       </tr>
     </tbody>
   </table>
