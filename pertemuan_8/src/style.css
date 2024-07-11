@@ -54,9 +54,19 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.card {
-  padding: 2em;
+table, th, td {
+  border: 1px solid #ffffff;
+  border-collapse: collapse;
 }
+
+td{
+  padding: 10px 20px;
+}
+
+button{
+  padding: 10px;
+}
+
 
 #app {
   max-width: 1280px;
