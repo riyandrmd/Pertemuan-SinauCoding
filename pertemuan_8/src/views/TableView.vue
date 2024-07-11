@@ -13,7 +13,6 @@ const hanldeShowData = (data) => {
   alert(
     `Nama ${data.nama}, Posisi ${data.position}, No Telp. ${data.no_telp} , Email ${data.email} `
   );
-  console.log(data);
 };
 </script>
 
