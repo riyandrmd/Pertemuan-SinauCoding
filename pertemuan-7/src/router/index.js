@@ -1,5 +1,5 @@
-import InputIngredient from '../../views/InputIngredient.vue'
-import CetakTagihan from '../../views/CetakTagihan.vue'
+import InputIngredient from '../views/InputIngredient.vue'
+import CetakTagihan from '../views/CetakTagihan.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
