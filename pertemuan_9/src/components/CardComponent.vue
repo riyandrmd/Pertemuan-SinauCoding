@@ -19,7 +19,7 @@ let buttonText = props.isCartPage ? "Add" : "Remove";
 
 
 <template>
-  <div class="d-flex gap-3 flex-wrap">
+  <div class="d-flex gap-3 flex-wrap justify-content-center">
     <div class="card" v-for="data in itemShow" :key="data.id">
       <p>{{ data.id }}. {{ data.title }}</p>
       <button @click="isCartPage ? addCartItem(data) : deleteCartItem(data)">
