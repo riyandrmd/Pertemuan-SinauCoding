@@ -11,7 +11,8 @@ const props = defineProps({
 });
 
 const { product, cartItem } = storeToRefs(store);
-const { addCartItem } = store;
+const { addCartItem, deleteCartItem } = store;
+
 let itemShow = props.isCartPage ? product.value : cartItem.value;
 let buttonText = props.isCartPage ? "Add" : "Remove";
 </script>
@@ -21,7 +22,9 @@ let buttonText = props.isCartPage ? "Add" : "Remove";
   <div class="d-flex gap-3 flex-wrap">
     <div class="card" v-for="data in itemShow" :key="data.id">
       <p>{{ data.id }}. {{ data.title }}</p>
-      <button @click="addCartItem">{{ buttonText }}</button>
+      <button @click="isCartPage ? addCartItem(data) : deleteCartItem(data)">
+        {{ buttonText }}
+      </button>
     </div>
   </div>
 </template>

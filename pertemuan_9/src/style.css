@@ -7,11 +7,6 @@ body {
   background-color: #ececec;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -21,12 +16,14 @@ button {
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
+  color: #ececec;
   transition: border-color 0.25s;
 }
 
 button:hover {
-  border-color: #646cff;
+  background: #363636;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
