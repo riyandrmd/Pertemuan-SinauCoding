@@ -14,7 +14,7 @@ export const useCartStore = defineStore('cart', () => {
             cartItem.value.push(data);
             count.value++
         } else {
-            alert("Item sudah ada di dalam keranjang")
+            alert("This item is already in your cart. You can only buy one of each item")
         }
 
     }
