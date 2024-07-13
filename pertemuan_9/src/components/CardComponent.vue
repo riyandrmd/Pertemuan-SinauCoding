@@ -33,6 +33,8 @@ let buttonText = props.isCartPage ? "Add" : "Remove";
 .card {
   padding: 20px;
   width: 16vw;
-  background: #ffe057;
+  max-height: 50vh;
+  background: #d1d1d1;
 }
+
 </style>

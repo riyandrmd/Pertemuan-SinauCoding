@@ -14,14 +14,14 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background : #252525;
   cursor: pointer;
   color: #ececec;
   transition: border-color 0.25s;
 }
 
 button:hover {
-  background: #363636;
+  background: #535353;
 }
 
 button:focus,

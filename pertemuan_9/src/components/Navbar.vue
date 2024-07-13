@@ -29,6 +29,13 @@ nav {
 .nav-link {
   color: white;
   font-weight: 700;
+  font-size: 22px;
+  margin-right: 15px;
+}
+
+.nav-link:hover, :focus {
+  text-decoration: underline;
+  text-underline-offset: 8px;
 }
 
 </style>

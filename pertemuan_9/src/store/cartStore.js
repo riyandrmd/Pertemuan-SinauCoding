@@ -4,7 +4,6 @@ import Product from "../json/Product.json";
 
 export const useCartStore = defineStore('cart', () => {
     const count = ref(0)
-    const name = ref('Eduardo')
     const product = ref(Product)
     const cartItem = ref([])
 
@@ -28,5 +27,5 @@ export const useCartStore = defineStore('cart', () => {
         }
     }
 
-    return { count, name, product, addCartItem, deleteCartItem, cartItem }
+    return { count, product, addCartItem, deleteCartItem, cartItem }
 });
