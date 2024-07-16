@@ -1,4 +1,4 @@
-# Peremuan 10
+# Pertemuan 10
 
 recall materi Axios
 API source : (https://jsonplaceholder.typicode.com/users)
