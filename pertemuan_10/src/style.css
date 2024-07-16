@@ -55,7 +55,11 @@ button:focus-visible {
 }
 
 .card {
-  padding: 2em;
+  padding: 17px;
+  text-align: left;
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 200px;
 }
 
 #app {
