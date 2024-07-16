@@ -6,7 +6,7 @@ import { RouterLink } from "vue-router";
   <nav class="navbar navbar-expand-md">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <RouterLink class="nav-link" to="/">Cart</RouterLink>
+        <RouterLink class="nav-link" to="/cart">Cart</RouterLink>
       </li>
       <li class="nav-item">
         <RouterLink class="nav-link" to="/log">Log</RouterLink>
