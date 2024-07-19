@@ -15,7 +15,7 @@ export default {
 
     const getPostData = async () => {
       const res = await axios.get("https://jsonplaceholder.typicode.com/posts");
-      dataPost.push(...res.data.slice(0, 10));
+      dataPost.push(...res.data.slice(0, 4));
       console.log(dataPost);
     };
 
@@ -32,7 +32,7 @@ export default {
   <div>
     <h2>Post</h2>
     <div class="flex">
-      <div class="card" v-for="item in dataPost" :key="item.index">
+      <div class="card post" v-for="item in dataPost" :key="item.index">
         <h3>{{ item.title }}</h3>
         <p>{{ item.body }}</p>
       </div>
@@ -53,6 +53,10 @@ export default {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.post{
+  width: 100%;
 }
 </style>
